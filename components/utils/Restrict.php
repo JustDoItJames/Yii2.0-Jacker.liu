@@ -1,7 +1,7 @@
 <?php
 /**
  *安全限制组件
- *@author dzthink<duanzongxiang@jinfuzi.com>
+ *@author jacket.liu<liuwenjie1993@gmail.com>
  *@version 1.0
  */
 
@@ -311,7 +311,7 @@ class Restrict extends Component
 
     /**
      * todo 如果是刷接口，则加入黑名单
-     * @author ludongdong
+     * @author jacket.liu
      * @param array  param['restrict_config_name'] 配置名  param['restrict_config_name'] 自定义key  用法和 assert 方法的传参相同
      * @return mixed
      */

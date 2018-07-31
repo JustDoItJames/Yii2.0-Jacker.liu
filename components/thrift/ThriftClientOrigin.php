@@ -2,7 +2,6 @@
 namespace app\components\thrift;
 use app\components\util\G;
 use yii\base\Component;
-use yii\base\ErrorException;
 use yii\base\Exception;
 
 class ThriftClientOrigin extends Component
@@ -74,10 +73,10 @@ class ThriftClientOrigin extends Component
                             throw $e;
                         }
                         //接口异常警告
-                        if(YII_ENV == 'prod') {
-                            $content = array("content" => \Yii::$app->params['interfaceRemindMessage'] . "接口连接异常警告(请检查连接配置是否正确或接口是否已正常启动):[interfaceName: {$config['className']}, host: {$config['serverHost']}, port: {$config['serverPort']}']");
-                            G::curl_post(\Yii::$app->params['interfaceRemindUrl'], array("msgtype" => "text", "text" => $content));
-                        }
+//                        if(YII_ENV == 'prod') {
+//                            $content = array("content" => \Yii::$app->params['interfaceRemindMessage'] . "接口连接异常警告(请检查连接配置是否正确或接口是否已正常启动):[interfaceName: {$config['className']}, host: {$config['serverHost']}, port: {$config['serverPort']}']");
+//                            G::curl_post(\Yii::$app->params['interfaceRemindUrl'], array("msgtype" => "text", "text" => $content));
+//                        }
                     }
                 }
             }
@@ -94,12 +93,12 @@ class ThriftClientOrigin extends Component
         $msgContent = new \MsgCenter\Sms();
         $msgContent->phone = '18575699392';
         $msgContent->code =  (int)102;
-        $keys = array_keys(['name'=>'娴嬭瘯闄�']);
+        $keys = array_keys(['name'=>'111']);
         array_walk($keys,function(&$value, $key){
             $value = 'params['.$value.']';
         });
 
-        $msgContent->paras = json_encode(array_combine($keys, array_values(['name'=>'娴嬭瘯闄�'])), JSON_FORCE_OBJECT);
+        $msgContent->paras = json_encode(array_combine($keys, array_values(['name'=>'111'])), JSON_FORCE_OBJECT);
 
         $this->MsgThriftSmsService->sendSms($msgContent);
     }
