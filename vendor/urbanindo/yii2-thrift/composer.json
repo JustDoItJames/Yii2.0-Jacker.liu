@@ -1,0 +1,35 @@
+{
+    "name": "urbanindo/yii2-thrift",
+    "description": "Thrift server application using Yii2",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Petra Barus",
+            "email": "petra.barus@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "apache/thrift": "0.10.0",
+        "yiisoft/yii2": "~2.0.13"
+    },
+    "require-dev": {
+        "apache/thrift": "0.10.0",
+        "yiisoft/yii2": "~2.0@dev",
+        "phpunit/phpunit": "4.6.*",
+        "phpunit/dbunit": ">=1.2",
+        "phpunit/php-code-coverage": "2.2.4",
+        "squizlabs/php_codesniffer": "2.*"
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/apache/thrift.git"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "UrbanIndo\\Yii2\\Thrift\\": "src/"
+        }
+    }
+}

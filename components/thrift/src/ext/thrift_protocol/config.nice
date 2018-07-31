@@ -1,0 +1,8 @@
+#! /bin/sh
+#
+# Created by configure
+
+'./configure' \
+'--enable-thrift_protocol' \
+'--with-php-config=/usr/local/webserver/php-5.4.22/bin/php-config' \
+"$@"
