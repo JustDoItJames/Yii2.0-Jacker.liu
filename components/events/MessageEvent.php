@@ -7,7 +7,7 @@ class MessageEvent extends Event
 {
     public $message;
 
-//    public static function handlers($event){
-//        var_dump($event);exit;
-//    }
+    public static function handlers($event){
+        var_dump($event);exit;
+    }
 }

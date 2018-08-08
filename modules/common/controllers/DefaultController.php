@@ -66,15 +66,15 @@ class DefaultController extends ControllerV1
 //        var_dump(Yii::getAlias('@foo'));exit;
 
         //事件处理方法:
-//        $Mailer = new Mailer();
-//        //事件处理器是静态类方法：
-////        $Mailer->on(Mailer::EVENT_MESSAGE_SENT,['app\components\events\MessageEvent','handlers']);
-//        //事件处理器是匿名函数：
-//        $Mailer->on(Mailer::EVENT_MESSAGE_SENT,function ($event){
-//            var_dump($event);
-//        });//使用on方法，就是绑定一个事件处理器。
-//        //$Mailer->off(Mailer::EVENT_MESSAGE_SENT);//移除全部的绑定时间处理器。off方法要在on方法之后执行才有效果
-//        $Mailer->send('测试一下事件处理器');
+        $Mailer = new Mailer();
+        //事件处理器是静态类方法：
+        $Mailer->on(Mailer::EVENT_MESSAGE_SENT,['app\components\events\MessageEvent','handlers']);
+        //事件处理器是匿名函数：
+        $Mailer->on(Mailer::EVENT_MESSAGE_SENT,function ($event){
+            var_dump($event);
+        });//使用on方法，就是绑定一个事件处理器。
+        //$Mailer->off(Mailer::EVENT_MESSAGE_SENT);//移除全部的绑定时间处理器。off方法要在on方法之后执行才有效果
+        $Mailer->send('测试一下事件处理器');
         //end
 
         $thrift = new UserCenterThriftService();//thrift接口
