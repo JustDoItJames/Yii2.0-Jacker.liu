@@ -22,7 +22,7 @@ return [
             'ip'=> 50,                                    //针对同一个ip地址限制次数
             'custom' => 50,                               //针对同一个账号限制次数
             'howlong' => 24*60*60,                        //过期时间
-            'ipWhiteList' => ['10.1.2.53'],               //白名单
+            'ipWhiteList' => [''],               //白名单
 //            'ipBlackList' => ['127.0.0.1'],             //黑名单
             'refer' => '',
 //            'refer' => '/.*\.lwj.*/',                   //refer的正则模式
