@@ -122,7 +122,7 @@ class Uploadernew
 		$ossboj = new OSSobjNew();
 		$isok = $ossboj->upload_by_multi_part($serverpath, $osspath);
 		if ($isok) {
-			$this->stateInfo = "https://jfz-static2.oss-cn-hangzhou.aliyuncs.com".$osspath;//$this->stateMap[0];
+			$this->stateInfo = "https://xykj-static2.oss-cn-hangzhou.aliyuncs.com".$osspath;//$this->stateMap[0];
 		} else {
 			$this->stateInfo = $this->getStateInfo("ERROR_FILE_MOVE");
 		}
@@ -146,7 +146,7 @@ class Uploadernew
         $ossboj = new OSSobjNew();
         $isok = $ossboj->upload_by_multi_part($serverpath, $osspath);
         if ($isok) {
-            $this->stateInfo = "https://jfz-static2.oss-cn-hangzhou.aliyuncs.com".$osspath;//$this->stateMap[0];
+            $this->stateInfo = "https://xykj-static2.oss-cn-hangzhou.aliyuncs.com".$osspath;//$this->stateMap[0];
         } else {
             $this->stateInfo = $this->getStateInfo("ERROR_FILE_MOVE");
         }
