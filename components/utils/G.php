@@ -26,7 +26,7 @@ class G{
      * @return null|string
      */
     public static function uploadImage($file,$path="main/img/",$allowFiles=array(".png", ".jpg", ".jpeg", ".gif", ".bmp"),$maxSize="2048000"){
-        $href = "https://-static2.oss-cn-hangzhou.aliyuncs.com/";
+        $href = "https://xylc-static2.oss-cn-hangzhou.aliyuncs.com/";
         //$path = "/main/img/";
         $file = G::objectToArray($file);
 
