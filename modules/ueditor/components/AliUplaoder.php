@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: michael.shi
+ * User: liuwenjie
  * Date: 2017/9/12
  * Time: 19:05
  *
@@ -47,7 +47,7 @@ class AliUplaoder
         "ERROR_HTTP_CONTENTTYPE"   => "链接contentType不正确"
     );
 
-    const OSS_URL = 'https://jfz-static2.oss-cn-hangzhou.aliyuncs.com/';
+    const OSS_URL = 'https://xykj-static2.oss-cn-hangzhou.aliyuncs.com/';
 
     //注意这里的配置应该与‘jfz_pc\protected\modules\ueditor\config\ueditorConfig.json’中
     //的“imagePathFormat”和“scrawlPathFormat”，“snapscreenPathFormat”...保持一致，且不带有前缀的斜杠
