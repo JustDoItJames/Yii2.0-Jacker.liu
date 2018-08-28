@@ -19,11 +19,11 @@ define('OSS_ACCESS_KEY', 'zBbNTrU3rtLaGnn37FvGtVb6y1FS3d');
             // )
         // ),
 
-//define("OSS_BUCKET","jfz-static");
-define("OSS_BUCKET","jfz-static2");
+//define("OSS_BUCKET","xykj-static");
+define("OSS_BUCKET","xykj-static2");
 define("OSS_SERVER","oss-cn-hangzhou.aliyuncs.com");
 // 具体查看链接: http://help.aliyun.com/knowledge_detail.htm?spm=5176.768314910.3.1.pZKhbs&knowledgeId=5974206
-define("OSS_URL","https://jfz-static2.oss-cn-hangzhou.aliyuncs.com");
+define("OSS_URL","https://xykj-static2.oss-cn-hangzhou.aliyuncs.com");
 //是否记录日志
 define('ALI_LOG', FALSE);
 //自定义日志路径，如果没有设置，则使用系统默认路径，在./logs/
