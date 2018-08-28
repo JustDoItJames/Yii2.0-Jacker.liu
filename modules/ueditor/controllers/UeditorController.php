@@ -3,7 +3,7 @@
 /**
  * 该控制器处理UEditor发出的相应请求
  * Created by PhpStorm.
- * User: michael.shi
+ * User: liuwenjie
  * Date: 2017/11/24
  * Time: 13:44
  */
