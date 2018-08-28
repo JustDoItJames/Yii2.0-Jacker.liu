@@ -373,7 +373,7 @@ class Protect
 
     //是否是白名单用户
     public function isWhite($ip){
-        $white_list = array('202.104.136.194','218.18.160.34');
+        $white_list = array('');
         return in_array($ip, $white_list)? true : false;
     }
 
