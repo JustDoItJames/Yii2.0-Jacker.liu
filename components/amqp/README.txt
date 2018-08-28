@@ -17,18 +17,6 @@ Installation
         
         ...
         
-        'rabbitMq' => [
-            'class' => 'app\components\amqp\AmqpWrapper',
-            'host' => '10.1.2.101',
-            'port' => 5672,
-            'user' => 'jfzwww',
-            'password' => 'jfzwww2018',
-            'vhost' => 'jfzwww',
-            'read_write_timeout' => 60,
-            'keepalive' => true,
-            'heartbeat' => 30,
-        ],
-        
         ...
         
       )
