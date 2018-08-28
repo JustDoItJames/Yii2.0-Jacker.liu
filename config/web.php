@@ -29,11 +29,11 @@ $config = [
             //rabbitMq组件
             'rabbitMq' => [
                 'class' => 'app\components\amqp\AmqpWrapper',
-                'host' => '10.1.2.101',
+                'host' => '',
                 'port' => 5672,
-                'user' => 'jfzwww',
-                'password' => 'jfzwww2018',
-                'vhost' => 'jfzwww',
+                'user' => '',
+                'password' => '',
+                'vhost' => '',
                 //下面注销的代码，针对消费者的时候开启，针对生产者的时候关闭。
                 //这里不开启，DefaultController::producter方法，作为生产者。
                 //是因为控制台的HelloController::consumer方法，作为消费者
